@@ -24,7 +24,7 @@ ddpclient.connect(function (error, wasReconnect) {
     console.log('Reestablishment of a connection.');
   }
 
-  ddpclient.call("login", [{
+  ddpclient.call('login', [{
     user: {
       email: Settings.meteor.email
     },
