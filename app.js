@@ -7,7 +7,7 @@ var ddpclient = new DDPClient({
   host: Settings.meteor.host,
   port: Settings.meteor.port,
   path: 'websocket',
-  ssl: false,
+  ssl: Settings.meteor.ssl,
   autoReconnect: true,
   autoReconnectTimer: 10,
   maintainCollections: true,
